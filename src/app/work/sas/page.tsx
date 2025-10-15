@@ -121,7 +121,7 @@ export default function SASPage() {
               <p className="max-w-screen">
                 I created low-fidelity wireframes using to visualize the
                 tool&apos;s core functionality and workflow. This helped us
-                settle on core components of the tool's design and quickly
+                settle on core components of the tool&apos;s design and quickly
                 gather feedback from stakeholders.
               </p>
             </div>

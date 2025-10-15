@@ -198,7 +198,7 @@ export default function CampusNavPage() {
           <p className="font-bold text-2xl">Outcomes</p>
           <p>
             After final iterations were made, I presented my app at our annual
-            gala where I received compliments on the app's concept and design. I
+            gala where I received compliments on the app&apos;s concept and design. I
             also received recognition from the App Team Carolina community and
             was awarded the &quot;Best Designed User Interface&quot; for my work
             on CampusNav. Throughout this project, I honed my skills in iOS
