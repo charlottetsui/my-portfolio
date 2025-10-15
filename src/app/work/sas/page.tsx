@@ -36,8 +36,8 @@ export default function SASPage() {
           <div className="flex flex-row justify-between mb-4 bg-gray-100 p-10">
             <div>
               <p className="font-bold text-xl mb-2">Roles & Responsibilities</p>
-              <p>UX Design: Wireframing, Prototyping</p>
-              <p>UX Research: User interviews, Data analysis and synthesis</p>
+              <p>UX Design</p>
+              <p>UX Research</p>
               <p>Full-Stack Developer</p>
             </div>
 
@@ -91,7 +91,7 @@ export default function SASPage() {
               workflow.
             </p>
           </div>
-          <div className="flex flex-row gap-4 my-4 leading-10">
+          <div className="flex flex-row gap-12 my-4 leading-10">
             <div className="flex flex-col gap-4 my-4">
               <p className="font-bold text-xl">Research</p>
               <p className="max-w-screen">
@@ -100,16 +100,34 @@ export default function SASPage() {
                 gather insights on their pain points and needs regarding
                 component usage tracking.
               </p>
-              <p>We asked questions such as:</p>
               <p>
-                Through this research, we identified key data points that would
-                be most valuable to track such as component usage frequency,
-                props used, and feature adoption.
+                We then synthesized this data to identify key data points that
+                would be most valuable to track such as component usage
+                frequency, props used, and feature adoption.
               </p>
             </div>
-            <div className="relative w-full h-screen flex justify-center">
+            <div className="relative w-full max-w-xl h-auto aspect-video flex justify-center">
               <Image
-                src="/images/SAS_BANNER.png"
+                src="/images/scout_research.png"
+                alt="Me!"
+                fill
+                className="object-contain object-top"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-12 my-4 leading-10">
+            <div className="flex flex-col gap-4 my-4">
+              <p className="font-bold text-xl">Wireframing</p>
+              <p className="max-w-screen">
+                I created low-fidelity wireframes using to visualize the
+                tool&apos;s core functionality and workflow. This helped us
+                settle on core components of the tool's design and quickly
+                gather feedback from stakeholders.
+              </p>
+            </div>
+            <div className="relative w-full h-full h-auto aspect-video flex justify-center">
+              <Image
+                src="/images/scout_research.png"
                 alt="Me!"
                 fill
                 className="object-contain object-top"

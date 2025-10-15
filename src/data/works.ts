@@ -29,7 +29,7 @@ export const works: Work[] = [
   {
     id: 3,
     slug: "campusnav",
-    image: "/images/CAMPUSNAV_BANNER.png",
+    image: "/images/campusnav_banner.png",
     title: "CampusNav",
     description:
       "Designed and built a campus navigation app that visualizes course schedules through interactive maps, enhancing the student experience with intuitive route planning.",

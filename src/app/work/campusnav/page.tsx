@@ -8,7 +8,7 @@ export default function CampusNavPage() {
         {/* Banner Image */}
         <div className="relative w-full h-screen aspect-video overflow-hidden">
           <Image
-            src="/images/CAMPUSNAV_BANNER.png"
+            src="/images/campusnav_banner.png"
             alt="CampusNav"
             fill
             className="object-cover"
@@ -58,7 +58,7 @@ export default function CampusNavPage() {
           </div>
         </div>
         <div className="flex flex-col gap-4 my-8 leading-10 mb-4">
-          <p className="font-bold text-xl">Inspiration</p>
+          <p className="font-bold text-2xl">Background</p>
           <p>
             When brainstorming ideas for my final project, I knew I wanted to
             create an app that could solve a real problem for students on
@@ -121,7 +121,7 @@ export default function CampusNavPage() {
           </p>
         </div>
         <div className="flex flex-col gap-4 my-8 leading-10 mb-4">
-          <p className="font-bold text-xl">Development</p>
+          <p className="font-bold text-2xl">Development</p>
           <p>
             Before beginning development, I needed a reliable way to integrate
             course schedule data into the app. I chose Firebase as the backend
@@ -130,6 +130,98 @@ export default function CampusNavPage() {
             university’s course catalog, converted it into JSON, and imported it
             into my app.
           </p>
+        </div>
+        <div className="flex flex-row gap-4 my-8 leading-10 mb-4">
+          <div className="flex flex-col">
+            <p className="font-bold text-xl">Map Feature</p>
+            <p>
+              I used MapKit to implement the map scheduling feature which allows
+              users to view their class locations on an interactive map. I
+              created custom map annotations that pin where the class is located
+              when users search and select a course. They can then press the
+              green button to map their route from class to class or use the red
+              button to clear the route.
+            </p>
+          </div>
+
+          <div className="relative w-screen h-full aspect-video overflow-hidden">
+            <Image
+              src="/images/CAMPUSNAV_MAP.gif"
+              alt="CampusNav"
+              fill
+              className="object-cover object-contain"
+            />
+          </div>
+        </div>
+        <div className="flex flex-row gap-4 my-32 leading-10 mb-4">
+          <div className="relative w-screen h-full aspect-video overflow-hidden">
+            <Image
+              src="/images/campusnav_schedule.gif"
+              alt="CampusNav"
+              fill
+              className="object-cover object-contain"
+            />
+          </div>
+
+          <div className="flex flex-col text-right">
+            <p className="font-bold text-xl">Map Feature</p>
+            <p>
+              I used MapKit to implement the map scheduling feature which allows
+              users to view their class locations on an interactive map. I
+              created custom map annotations that pin where the class is located
+              when users search and select a course. They can then press the
+              green button to map their route from class to class or use the red
+              button to clear the route.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-row gap-4 my-32 leading-10 mb-4">
+          <div className="flex flex-col">
+            <p className="font-bold text-xl">Authentication</p>
+            <p>
+              I implemented user authentication using Firebase Authentication,
+              allowing users to securely sign up and log in to the app using
+              their email and password. This ensures that each user&apos;s
+              course schedule and preferences are personalized and protected.
+            </p>
+          </div>
+          <div className="relative w-full h-full aspect-video overflow-hidden">
+            <Image
+              src="/images/campusnav_login.png"
+              alt="CampusNav"
+              fill
+              className="object-cover object-contain"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col gap-4 my-8 leading-10 mb-4">
+          <p className="font-bold text-2xl">Outcomes</p>
+          <p>
+            After final iterations were made, I presented my app at our annual
+            gala where I received compliments on the app's concept and design. I
+            also received recognition from the App Team Carolina community and
+            was awarded the &quot;Best Designed User Interface&quot; for my work
+            on CampusNav. Throughout this project, I honed my skills in iOS
+            development, UI/UX design, and backend integration.
+          </p>
+          <p>
+            Looking toward the future, I hope to be able to improve and expand
+            upon the current app and add more features such as:
+          </p>
+          <div className="flex flex-col gap-4">
+            <p>
+              💡 Automating the process of querying and updating course data
+              from the university’s course catalog
+            </p>
+            <p>
+              💡 Implementing secure user authentication restricted to verified
+              college email addresses
+            </p>
+            <p>
+              💡 Integrating real-time navigation with walking directions
+              between classes
+            </p>
+          </div>
         </div>
       </div>
     </PageTransition>

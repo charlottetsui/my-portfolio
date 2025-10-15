@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="text-sm">
           Made with <span aria-hidden>❤️</span> by Charlotte Tsui
         </div>
-
+        {/** SVGs created with the help of Copilot❤️ */}
         <div className="flex items-center space-x-6 mt-4 md:mt-0">
           <Link
             href="https://github.com/charlottetsui"
