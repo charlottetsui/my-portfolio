@@ -70,10 +70,9 @@ export default function CentiblePage() {
             <p>
               We want to enable users to see their transactions filtered by
               category if a user clicks on the category’s bar graph on the home
-              page. For example, if the user clicks on “eating out” on the home
-              page (within a certain radius), they will be taken to the screen
-              with the week/month’s transactions filtered by the “eating out”
-              category.
+              page. For example, if the user clicks on the &quot;Eating Out&quot; bar on
+              the home page, they will be taken to the screen with the
+              week/month’s transactions filtered by the &quot;Eating Out&quot; category.
             </p>
           </div>
           <div className="flex flex-col gap-4">

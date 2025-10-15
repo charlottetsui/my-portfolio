@@ -54,7 +54,7 @@ export default function SASPage() {
               <p>12 weeks</p>
             </div>
           </div>
-          
+
           <div className="flex flex-col gap-4 my-4">
             <p className="font-bold text-xl">The Problem</p>
             <p className="leading-10">
@@ -87,7 +87,8 @@ export default function SASPage() {
               The process of building SCOUT began with conducting thorough user
               research to understand stakeholder needs. We then identified key
               data points and target consumers, and designed a wire-framed
-              prototype to visualize the tool's core functionality and workflow.
+              prototype to visualize the tool&apos;s core functionality and
+              workflow.
             </p>
           </div>
           <div className="flex flex-row gap-4 my-4 leading-10">

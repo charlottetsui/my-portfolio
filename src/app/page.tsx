@@ -11,7 +11,7 @@ export default function Home() {
           <div className="flex flex-row justify-between mb-50">
             <div className="flex flex-col max-w-2xl">
               <p className="text-5xl font-bold mb-4">
-                Hi there, I'm Charlotte!
+                {"Hi there, Im Charlotte!"}
               </p>
               <p className="text-gray-600 mb-8 leading-12 text-2xl">
                 A student and software developer at the University of North

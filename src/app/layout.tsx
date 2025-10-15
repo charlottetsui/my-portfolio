@@ -36,7 +36,7 @@ export default function RootLayout({
           <>
             <Navbar />
             <AnimatePresence mode="wait">
-              <div key={pathname} className="mx-32 my-50">
+              <div key={pathname} className="mx-32 my-35">
                 {children}
               </div>
             </AnimatePresence>

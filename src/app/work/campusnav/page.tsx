@@ -27,8 +27,8 @@ export default function CampusNavPage() {
             data.
           </p>
           <p>
-            This app was developed as my final project for App Team Carolina's
-            iOS Apprenticeship program.
+            This app was developed as my final project for App Team
+            Carolina&apos;s iOS Apprenticeship program.
           </p>
         </div>
       </div>
@@ -87,8 +87,8 @@ export default function CampusNavPage() {
           hours when foot traffic is high. This led me to the question:
         </p>
         <p className="text-center italic my-4 text-[#6599c2]">
-          "How can I make scheduling and navigating classes on campus easier and
-          more efficient for students?"
+          &quot;How can I make scheduling and navigating classes on campus easier and
+          more efficient for students?&quot;
         </p>
       </div>
       <div className="flex flex-col gap-4 my-8 leading-10 mb-4">
