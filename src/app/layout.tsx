@@ -6,6 +6,7 @@ import "./globals.css";
 import { AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({
@@ -40,6 +41,7 @@ export default function RootLayout({
                 {children}
               </div>
             </AnimatePresence>
+            <Footer />
           </>
         )}
       </body>
