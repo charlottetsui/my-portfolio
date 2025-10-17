@@ -10,9 +10,9 @@ export default function Navbar() {
         <Link href="/#work" className="hover:text-black">
           Work
         </Link>
-        <Link href="/" className="hover:text-black">
+        {/* <Link href="/" className="hover:text-black">
           About
-        </Link>
+        </Link> */}
         <a
           href="/images/CharlotteTsui_Resume_2025.pdf"
           target="_blank"
