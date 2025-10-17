@@ -106,33 +106,64 @@ export default function SASPage() {
                 frequency, props used, and feature adoption.
               </p>
             </div>
-            <div className="relative w-full max-w-xl h-auto aspect-video flex justify-center">
-              <Image
-                src="/images/scout_research.png"
-                alt="Me!"
-                fill
-                className="object-contain object-top"
-              />
+            <div className="relative w-full max-w-xl h-auto aspect-video flex flex-col items-center">
+              <div className="relative w-full aspect-video">
+                <Image
+                  src="/images/scout_research.png"
+                  alt="Me!"
+                  fill
+                  className="object-contain object-top rounded-lg"
+                />
+              </div>
+              <p className="text-sm text-gray-500">
+                Sample of S.C.O.U.T. research data
+              </p>
             </div>
           </div>
-          <div className="flex flex-col gap-12 my-4 leading-10">
-            <div className="flex flex-col gap-4 my-4">
+          <div className="flex flex-col gap-12 leading-10">
+            <div className="flex flex-col gap-4">
               <p className="font-bold text-xl">Wireframing</p>
               <p className="max-w-screen">
                 I created low-fidelity wireframes using to visualize the
                 tool&apos;s core functionality and workflow. This helped us
                 settle on core components of the tool&apos;s design and quickly
-                gather feedback from stakeholders.
+                gather feedback.
               </p>
             </div>
             <div className="relative w-full h-full h-auto aspect-video flex justify-center">
               <Image
-                src="/images/scout_research.png"
+                src="/images/sas_wireframing.JPG"
                 alt="Me!"
                 fill
                 className="object-contain object-top"
               />
             </div>
+            <p className="max-w-screen">
+              We settled on creating a web-based dashboard that would allow
+              users to view how components were being used across different
+              consumer applications/repositories. The dashboard would include a
+              bar graph to visualize component usage frequency, a table to
+              display detailed information about each component, and filters to
+              allow users to sort and view.
+            </p>
+          </div>
+          <div className="flex flex-col gap-4 my-8 leading-10 mb-4">
+            <p className="font-bold text-2xl">Development</p>
+            <p>
+              Using JSCodeShift to analyze the Abstract Syntax Tree (AST) of
+              JavaScript/TypeScript code, we built a custom parser that could
+              accurately identify and extract component usage data from consumer
+              repositories, counting import declarations and their specifiers to
+              gather structural insight about components.
+            </p>
+            <p>
+              We stored our parsed data in a MongoDB database, which allowed for
+              efficient querying and retrieval of component usage information.
+              Finally, we built a web-based dashboard using Next.js and React to
+              visualize the data, incorporating interactive elements such as
+              graphs, tables, and filters to allow users to explore and analyze
+              component usage across different consumer applications.
+            </p>
           </div>
         </div>
       </div>
