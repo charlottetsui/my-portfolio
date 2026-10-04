@@ -1,50 +1,29 @@
-"use client";
-
-import { Geist, Geist_Mono, Roboto } from "next/font/google";
-import Navbar from "@/components/Navbar";
+import { googleSans, geistMono } from "./fonts";
+import SiteShell from "@/components/layout/SiteShell";
+import { ViewTransitions } from "next-view-transitions";
 import "./globals.css";
-import { AnimatePresence } from "framer-motion";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import Footer from "@/components/Footer";
+import { cookies, headers } from "next/headers";
+import PasswordGate from "@/components/auth/PasswordGate";
+import { safeReturnPath, SESSION_COOKIE, validSession } from "@/lib/site-auth";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-const roboto = Roboto({
-  variable: "--font-roboto",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
-  display: "swap",
-});
-
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const pathname = usePathname();
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => setIsMounted(true), []);
-
+  // Verify again on the server so middleware is not the only content boundary.
+  const authenticated = await validSession((await cookies()).get(SESSION_COOKIE)?.value);
+  const requestHeaders = await headers();
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased bg-white min-h-screen`}
-      >
-        {isMounted && (
-          <>
-            <Navbar />
-            <AnimatePresence mode="wait">
-              <div key={pathname} className="mx-32 my-35">
-                {children}
-              </div>
-            </AnimatePresence>
-            <Footer />
-          </>
-        )}
-      </body>
-    </html>
+    <ViewTransitions>
+      <html lang="en">
+        <body
+          className={`${googleSans.variable} ${geistMono.variable} antialiased bg-white min-h-screen`}
+        >
+          {authenticated ? <SiteShell>{children}</SiteShell> : (
+            <PasswordGate next={safeReturnPath(requestHeaders.get("x-portfolio-return-path"))}
+              error={requestHeaders.get("x-portfolio-auth-error") === "1"} />
+          )}
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }

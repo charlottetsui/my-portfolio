@@ -1,4 +1,4 @@
-export default function ByteNotesPage() {
+export default function ByteNotesCaseStudy() {
   return (
     <div className="min-h-screen">
       {/* Banner Image */}

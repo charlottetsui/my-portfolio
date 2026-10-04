@@ -15,7 +15,7 @@ export const works: Work[] = [
     title: "SAS Filament UI System",
     description:
       "Led the end-to-end development of S.C.O.U.T., a static code analysis tool, and developed ZeroState, a new Filament UI component adopted across SAS internal applications.",
-    href: "/work/sas",
+    href: "/sas",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ export const works: Work[] = [
     title: "Centible",
     description:
       "Developing new iOS features for Centible, a personal finance app focused on helping college students manage their finances.",
-    href: "/work/centible",
+    href: "/centible",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const works: Work[] = [
     title: "CampusNav",
     description:
       "Designed and built a campus navigation app that visualizes course schedules through interactive maps, enhancing the student experience with intuitive route planning.",
-    href: "/work/campusnav",
+    href: "/campusnav",
   },
   // {
   //   id: 4,
@@ -42,7 +42,7 @@ export const works: Work[] = [
   //   title: "ByteNotes",
   //   description:
   //     "Developed an interactive, real-time code editing platform that blends markdown authoring and live execution, delivering a collaborative student user experience.",
-  //   href: "/work/bytenotes",
+  //   href: "/bytenotes",
   // },
 ];
 

@@ -1,15 +1,15 @@
 import Link from "next/link";
 import React from "react";
 
-export default function Footer() {
+export default function SiteFooter() {
   return (
-    <footer className="w-full text-gray-500 bg-white py-8 px-6 md:px-32 mt-50 mb-10">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
+    <footer className="site-footer text-gray-500">
+      <div className="site-footer-inner">
         <div className="text-sm">
           Made with <span aria-hidden>❤️</span> by Charlotte Tsui
         </div>
         {/** SVGs created with the help of Copilot❤️ */}
-        <div className="flex items-center space-x-6 mt-4 md:mt-0">
+        <div className="site-footer-links">
           <Link
             href="https://github.com/charlottetsui"
             target="_blank"
